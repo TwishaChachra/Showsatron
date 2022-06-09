@@ -12,5 +12,9 @@ namespace Showsatron.Data
             : base(options)
         {
         }
+        public DbSet<Showsatron.Models.Platform> Platforms { get; set; }
+        public DbSet <Showsatron.Models.Genre> Genres { get; set; }
+        public DbSet <Showsatron.Models.AccountInfo> AccountInfos { get; set; }
+
     }
 }
