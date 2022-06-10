@@ -22,7 +22,7 @@ namespace Showsatron.Controllers
         // GET: Platforms
         public async Task<IActionResult> Index()
         {
-            var applicationDbContext = _context.Platforms.Include(p => p.Genre);
+            var applicationDbContext = _context.Platforms.Include(p => p.Genre).OrderBy(p => p.Name);
             return View(await applicationDbContext.ToListAsync());
         }
 

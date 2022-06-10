@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using Showsatron.Models;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -12,9 +13,9 @@ namespace Showsatron.Data
             : base(options)
         {
         }
-        public DbSet<Showsatron.Models.Platform> Platforms { get; set; }
-        public DbSet <Showsatron.Models.Genre> Genres { get; set; }
-        public DbSet <Showsatron.Models.AccountInfo> AccountInfos { get; set; }
+        public DbSet<Platform> Platforms { get; set; }
+        public DbSet <Genre> Genres { get; set; }
+        public DbSet <AccountInfo> AccountInfos { get; set; }
 
     }
 }

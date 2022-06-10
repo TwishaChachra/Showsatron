@@ -14,5 +14,7 @@ namespace Showsatron.Models
         public string Language { get; set; }
         public string Type { get; set; }
         public List<Platform> Platforms { get; set; }
+
+
     }
 }
