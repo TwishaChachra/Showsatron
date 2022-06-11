@@ -1,4 +1,5 @@
-﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+﻿@import url('https://fonts.googleapis.com/css2?family=Tai+Heritage+Pro&display=swap');
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
 a.navbar-brand {
@@ -7,15 +8,31 @@ a.navbar-brand {
   word-break: break-all;
 }
 
+h1 {
+    color: #7B1FA2;
+}
+
+p {
+    color: #689F38;
+}
+
 /* Provide sufficient contrast against white background */
 a {
-  color: #0366d6;
+    color: #F57C00;
 }
 
 .btn-primary {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+    color: #fff;
+    background-color: #795548;
+    border-color: #1861ac;
+}
+
+    .btn-primary:hover {
+        background-color: #757575;
+    }
+
+.navbar-dark {
+    background-color: #FF5722;
 }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
@@ -59,8 +76,9 @@ html {
 }
 
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+    font-family: 'Tai Heritage Pro',serif;
 }
 .footer {
   position: absolute;

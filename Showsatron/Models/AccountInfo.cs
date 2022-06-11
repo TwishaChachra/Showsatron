@@ -17,3 +17,4 @@ namespace Showsatron.Models
 
     }
 }
+//The values of subscription prices were taken from: https://techdaily.ca/streaming-services-canada/

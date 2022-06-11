@@ -9,10 +9,11 @@
 <p>
     <a asp-action="Create">Create New</a>
 </p>
-<table class="table">
+<table class="table table-dark">
     <thead>
         <tr>
             <th>
+               
                 @Html.DisplayNameFor(model => model.SubscriptionPrice)
             </th>
             <th>
@@ -31,9 +32,9 @@
                 @Html.DisplayFor(modelItem => item.Platform.Name)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.AccountInfoId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.AccountInfoId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.AccountInfoId">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.AccountInfoId" class="btn btn-primary">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.AccountInfoId" class="btn btn-primary">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.AccountInfoId"class="btn btn-primary">Delete</a>
             </td>
         </tr>
 }
