@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -10,6 +11,7 @@ using Showsatron.Models;
 
 namespace Showsatron.Controllers
 {
+    [Authorize]
     public class AccountInfoesController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -26,6 +28,7 @@ namespace Showsatron.Controllers
             return View(await applicationDbContext.ToListAsync());
         }
 
+        [AllowAnonymous]
         // GET: AccountInfoes/Details/5
         public async Task<IActionResult> Details(int? id)
         {
