@@ -85,7 +85,6 @@ namespace ShowsatronTests
 
             Assert.AreEqual(404, notFoundResult.StatusCode);
         }
-
        
     }
 }
